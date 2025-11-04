@@ -2,8 +2,8 @@
   {
     "type": "region_settings",
     "id": "isekai",
-    "rivers": "default",
-    "lakes": "default",
+    "rivers": "isekai_default",
+    "lakes": "isekai_default",
     "ocean": null,
     "ravines": "default",
     "forests": "default",
@@ -41,13 +41,36 @@
     "default_groundcover": [ [ "t_isekai_groundcover", 1 ] ],
     "feature_flag_settings": { "blacklist": [  ], "whitelist": [ "ISEKAI" ] },
     "connections": {
-      "intra_city_road_connection": "local_road",
-      "inter_city_road_connection": "local_road",
+      "intra_city_road_connection": "isekai_trail",
+      "inter_city_road_connection": "isekai_trail",
       "trail_connection": "forest_trail",
       "sewer_connection": "sewer_tunnel",
       "subway_connection": "subway_tunnel",
-      "rail_connection": "local_railroad"
+      "rail_connection": "isekai_trail"
     }
+  },
+  {
+    "type": "region_settings_river",
+    "id": "isekai_default",
+    "river_scale": 4.0,
+    "river_frequency": 6,
+    "river_branch_chance": 256.0,
+    "river_branch_remerge_chance": 8,
+    "river_branch_scale_decrease": 0.2
+  },
+  {
+    "type": "region_settings_lake",
+    "id": "isekai_default",
+    "noise_threshold_lake": 0.25,
+    "lake_size_min": 20,
+    "lake_depth": -5,
+    "shore_extendable_overmap_terrain": [ "forest", "forest_thick", "forest_water", "field" ],
+    "shore_extendable_overmap_terrain_aliases": [
+      { "om_terrain": "island_forest", "om_terrain_match_type": "TYPE", "alias": "forest" },
+      { "om_terrain": "island_forest_thick", "om_terrain_match_type": "TYPE", "alias": "forest_thick" },
+      { "om_terrain": "island_forest_water", "om_terrain_match_type": "TYPE", "alias": "forest_water" },
+      { "om_terrain": "island_field", "om_terrain_match_type": "TYPE", "alias": "field" }
+    ]
   },
   {
     "type": "region_settings_forest_trail",
@@ -69,6 +92,7 @@
     "copy-from": "default",
     "ter_furn": [
       "default_t_isekai_groundcover",
+      "default_t_isekai_groundcover_road",
       "isekai_default_t_region_groundcover",
       "isekai_default_t_region_groundcover_urban",
       "isekai_default_t_region_groundcover_forest",
@@ -109,6 +133,12 @@
     "id": "default_t_isekai_groundcover",
     "ter_id": "t_isekai_groundcover",
     "replace_with_terrain": [ [ "t_isekai_grass", 3 ], [ "t_isekai_grass_tall", 1 ], [ "t_isekai_grass_long", 5 ] ]
+  },
+  {
+    "type": "region_terrain_furniture",
+    "id": "default_t_isekai_groundcover_road",
+    "ter_id": "t_isekai_groundcover_road",
+    "replace_with_terrain": [ [ "t_isekai_grass", 1 ], [ "t_isekai_moss", 5 ] ]
   },
   {
     "type": "region_terrain_furniture",

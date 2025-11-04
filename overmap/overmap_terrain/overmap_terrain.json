@@ -2,6 +2,7 @@
   {
     "type": "overmap_terrain",
     "id": [ "isekai_field" ],
+    "looks_like": "field",
     "copy-from": "generic_open_land",
     "name": "field",
     "sym": ".",
@@ -10,5 +11,16 @@
     "see_cost": "none",
     "travel_cost_type": "field",
     "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "isekai_trail",
+    "looks_like": "road",
+    "vision_levels": "large_pavement",
+    "name": "old road",
+    "color": "dark_gray",
+    "see_cost": "none",
+    "travel_cost_type": "road",
+    "flags": [ "LINEAR" ]
   }
 ]

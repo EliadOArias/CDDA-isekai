@@ -1,0 +1,22 @@
+[
+  {
+    "type": "overmap_location",
+    "id": "isekai_trail",
+    "terrains": [ "isekai_trail" ]
+  },
+  {
+    "type": "overmap_location",
+    "id": "isekai_field",
+    "terrains": [ "isekai_trail" ]
+  },
+  {
+    "type": "overmap_connection",
+    "id": "isekai_trail",
+    "subtypes": [
+      { "terrain": "isekai_trail", "locations": [ "isekai_field", "isekai_trail" ] },
+      { "terrain": "isekai_trail", "locations": [ "forest_without_trail" ], "basic_cost": 5 },
+      { "terrain": "isekai_trail", "locations": [ "forest_edge" ], "basic_cost": 100 },
+      { "terrain": "isekai_trail", "locations": [ "swamp" ], "basic_cost": 40 }
+    ]
+  }
+]
