@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2025-11-04 23:42+0800\n"
-"PO-Revision-Date: 2025-11-04 23:44+0800\n"
+"POT-Creation-Date: 2025-11-05 02:47+0800\n"
+"PO-Revision-Date: 2025-11-05 02:52+0800\n"
 "Last-Translator: \n"
 "Language-Team: None\n"
 "Language: zh_CN\n"
@@ -34,12 +34,12 @@ msgid "your body doesn't move"
 msgstr "你的身体没有任何移动"
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "dirt"
 msgstr ""
 
 #. ~ Description of terrain 'dirt'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "It's dirt.  Although from ISEKAI, it looks no different from ordinary soil.  "
 "Seems like some fine earth suitable for tilling.  Could also be dug out for "
@@ -48,29 +48,51 @@ msgstr ""
 "泥土地，虽然处于异世界，但是看起来没什么不同。适合耕种，也可以开发建设项目。"
 
 #. ~ Bashing sound
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "thump"
 msgstr ""
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
+msgid "forest floor"
+msgstr ""
+
+#. ~ Description of terrain 'forest floor'
+#: .\furniture_and_terrain\terrain-flora.json
+msgid "Covered in twigs and lots of brown, decaying leaves from ISEKAI."
+msgstr "覆盖着树枝与许多腐烂的棕色异世界树叶。"
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain-flora.json
+msgid "moss"
+msgstr ""
+
+#. ~ Description of terrain 'moss'
+#: .\furniture_and_terrain\terrain-flora.json
+msgid ""
+"A patch of moist, spongy moss growing unnaturally lush from prolonged "
+"exposure to the ambient magic."
+msgstr "一块潮湿的海绵状苔藓。在魔力的萦绕下生机勃勃。"
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "dead grass"
 msgstr ""
 
 #. ~ Description of terrain 'dead grass'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "An area of long, shaggy grass that hasn't been cut recently, growing quickly "
 "from exposure to the ambient magic."
 msgstr "一片长而杂乱的草，有段时间没剪了。在魔力的萦绕下，生长的很快。"
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "grazed grass"
 msgstr ""
 
 #. ~ Description of terrain 'grazed grass'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "An area of extremely short green stubble protruding from the dirt, growing "
 "quickly from exposure to the ambient magic.  Something has been clearly "
@@ -80,12 +102,12 @@ msgstr ""
 "来。显然有什么东西在这里吃过草。"
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "grass"
 msgstr ""
 
 #. ~ Description of terrain 'grass'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "An area of hardy magical grass about ankle high, growing unnaturally lush "
 "from prolonged exposure to the ambient magic.  Cutting the grass short "
@@ -96,28 +118,50 @@ msgstr ""
 "这里变成一块泥土地。"
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "long grass"
 msgstr ""
 
 #. ~ Description of terrain 'long grass'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "An area of long, shaggy grass about shin high, growing unnaturally lush from "
 "prolonged exposure to the ambient magic."
 msgstr "一片长而杂乱的草，大概有小腿那么高。在魔力的萦绕下生机勃勃。"
 
 #. ~ Terrain name
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid "tall grass"
 msgstr ""
 
 #. ~ Description of terrain 'tall grass'
-#: .\furniture_and_terrain\terrain_flora.json
+#: .\furniture_and_terrain\terrain-flora.json
 msgid ""
 "An area of tall grass about head high, growing unnaturally lush from "
 "prolonged exposure to the ambient magic."
 msgstr "一片茂密的草丛，大概有头那么高。在魔力的萦绕下生机勃勃。"
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain-pesudo.json
+msgid "pseudo terrain"
+msgstr ""
+
+#. ~ Description of terrain 'pseudo terrain'
+#: .\furniture_and_terrain\terrain-pesudo.json
+msgid ""
+"This should never actually show up, it should have been replaced with "
+"regional terrain."
+msgstr ""
+
+#. ~ Overmap terrain name
+#: .\overmap\overmap_terrain\overmap_terrain.json
+msgid "field"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: .\overmap\overmap_terrain\overmap_terrain.json
+msgid "old road"
+msgstr "久踏小径"
 
 #~ msgid "Blade X Magic! Fantasy isekai! 111"
 #~ msgstr "剑与魔法！"

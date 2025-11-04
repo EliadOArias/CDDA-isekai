@@ -138,7 +138,7 @@
     "type": "region_terrain_furniture",
     "id": "default_t_isekai_groundcover_road",
     "ter_id": "t_isekai_groundcover_road",
-    "replace_with_terrain": [ [ "t_isekai_grass", 1 ], [ "t_isekai_moss", 5 ] ]
+    "replace_with_terrain": [ [ "t_isekai_grass", 8 ], [ "t_isekai_grass_long", 1 ] ]
   },
   {
     "type": "region_terrain_furniture",
