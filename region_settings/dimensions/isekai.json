@@ -9,9 +9,9 @@
     "forests": "default",
     "forest_composition": "default",
     "forest_trails": "isekai_default",
-    "highways": "default",
-    "cities": "default",
-    "map_extras": "default",
+    "highways": null,
+    "cities": "isekai_default",
+    "map_extras": "no_map_extras",
     "terrain_furniture": "default",
     "weather": "default",
     "urbanity_increase": [ 0, 10, 5, 0 ],
@@ -62,5 +62,41 @@
     "trailhead_chance": 1,
     "trailhead_road_distance": 6,
     "trailheads": [ [ "trailhead_basic", 1 ] ]
+  },
+  {
+    "type": "region_settings_city",
+    "id": "isekai_default",
+    "shop_radius": 30,
+    "shop_sigma": 50,
+    "park_radius": 20,
+    "park_sigma": 80,
+    "houses": [
+      [ "urban_1_house", 50 ],
+      [ "urban_2_house", 50 ],
+      [ "urban_dd_house", 1 ],
+      [ "urban_3_house", 50 ],
+      [ "urban_4_house_basement", 50 ],
+      [ "urban_5_house", 50 ],
+      [ "urban_6_house", 50 ],
+      [ "urban_7_house_garden", 50 ],
+      [ "urban_8_house_brick_garden", 50 ],
+      [ "urban_9_house_garage_loft", 50 ],
+      [ "urban_10_house_brick_pool", 50 ],
+      [ "urban_11_house_brick", 50 ],
+      [ "urban_12_house", 50 ],
+      [ "urban_15_house", 50 ],
+      [ "urban_16_house_ranch", 50 ],
+      [ "urban_17_house_ranch", 50 ],
+      [ "urban_18_victorian", 50 ],
+      [ "urban_20_house", 50 ],
+      [ "urban_22_house_pool", 50 ]
+    ],
+    "parks": [  ],
+    "shops": [
+      [ "urban_13_dense_house_apt_house", 300 ],
+      [ "urban_14_dense_house_mart_food", 200 ],
+      [ "urban_25_dense_diner_apt", 200 ],
+      [ "urban_29_dense_row", 200 ]
+    ]
   }
 ]
