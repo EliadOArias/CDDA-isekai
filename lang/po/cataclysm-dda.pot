@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2025-11-04 17:10+0800\n"
-"PO-Revision-Date: 2025-11-04 17:10+0800\n"
+"POT-Creation-Date: 2025-11-04 23:42+0800\n"
+"PO-Revision-Date: 2025-11-04 23:42+0800\n"
 "Last-Translator: None\n"
 "Language-Team: None\n"
 "Language: en\n"
@@ -30,4 +30,85 @@ msgstr ""
 #. ~ Fail message in travel in EoC 'EOC_isekai_travel_test'
 #: .\eoc\test\travel_isekai_test.json
 msgid "your body doesn't move"
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "dirt"
+msgstr ""
+
+#. ~ Description of terrain 'dirt'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"It's dirt.  Although from ISEKAI, it looks no different from ordinary soil.  "
+"Seems like some fine earth suitable for tilling.  Could also be dug out for "
+"construction projects."
+msgstr ""
+
+#. ~ Bashing sound
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "thump"
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "dead grass"
+msgstr ""
+
+#. ~ Description of terrain 'dead grass'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"An area of long, shaggy grass that hasn't been cut recently, growing quickly "
+"from exposure to the ambient magic."
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "grazed grass"
+msgstr ""
+
+#. ~ Description of terrain 'grazed grass'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"An area of extremely short green stubble protruding from the dirt, growing "
+"quickly from exposure to the ambient magic.  Something has been clearly "
+"grazing here."
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "grass"
+msgstr ""
+
+#. ~ Description of terrain 'grass'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"An area of hardy magical grass about ankle high, growing unnaturally lush "
+"from prolonged exposure to the ambient magic.  Cutting the grass short "
+"enough would destroy the root system, causing this area to turn into a patch "
+"of dirt."
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "long grass"
+msgstr ""
+
+#. ~ Description of terrain 'long grass'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"An area of long, shaggy grass about shin high, growing unnaturally lush from "
+"prolonged exposure to the ambient magic."
+msgstr ""
+
+#. ~ Terrain name
+#: .\furniture_and_terrain\terrain_flora.json
+msgid "tall grass"
+msgstr ""
+
+#. ~ Description of terrain 'tall grass'
+#: .\furniture_and_terrain\terrain_flora.json
+msgid ""
+"An area of tall grass about head high, growing unnaturally lush from "
+"prolonged exposure to the ambient magic."
 msgstr ""

@@ -1,0 +1,7 @@
+[
+  {
+    "type": "item_group",
+    "id": "isekai_field",
+    "items": [ [ "rock", 40 ], [ "rock_flaking", 10 ], [ "flint", 5 ], [ "rock_large", 5 ], [ "sharp_rock", 5 ] ]
+  }
+]
