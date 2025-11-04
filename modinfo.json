@@ -5,7 +5,7 @@
     "name": "Isekai",
     "authors": [ "EliadOArias" ],
     "maintainers": [ "EliadOArias" ],
-    "description": "New world! Blade X Magic!",
+    "description": "Blade X Magic!",
     "category": "content",
     "dependencies": [ "dda" ]
   }

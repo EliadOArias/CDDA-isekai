@@ -2,15 +2,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2025-11-04 12:43+0800\n"
-"PO-Revision-Date: 2025-11-04 12:56+0800\n"
-"Last-Translator: <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (simplified)\n"
+"POT-Creation-Date: 2025-11-04 16:39+0800\n"
+"PO-Revision-Date: 2025-11-04 16:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: None\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ~ MOD name
 #: .\modinfo.json
@@ -19,5 +20,5 @@ msgstr "异世界"
 
 #. ~ Description of MOD 'Isekai'
 #: .\modinfo.json
-msgid "New world! Blade X Magic!"
-msgstr "新世界！剑与魔法！"
+msgid "Blade X Magic! Fantasy isekai! 111"
+msgstr "剑与魔法！"

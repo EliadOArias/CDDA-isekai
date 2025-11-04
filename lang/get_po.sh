@@ -1,0 +1,1 @@
+msginit -o lang/incoming\zh_CN.po -i lang/po/base.pot -l zh_CN

@@ -1,4 +1,9 @@
 # Isekai
 
-A mod for cataclysm-dda.
-[github](https://github.com/CleverRaven/Cataclysm-DDA)
+A mod for [cataclysm-dda](https://github.com/CleverRaven/Cataclysm-DDA).
+
+supported languages: en, zh_CN
+
+## content
+
+Add a branding new dimenssion.
