@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "isekai",
+    "name": "Isekai",
+    "authors": [ "EliadOArias" ],
+    "maintainers": [ "EliadOArias" ],
+    "description": "New world! Blade X Magic!",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
