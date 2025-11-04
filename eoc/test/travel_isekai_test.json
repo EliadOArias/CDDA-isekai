@@ -1,0 +1,19 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_isekai_travel_test",
+    "//": "shifts the character to ISEKAI",
+    "global": true,
+    "effect": [
+      {
+        "u_travel_to_dimension": "isekai",
+        "npc_travel_radius": 2,
+        "region_type": "isekai",
+        "npc_travel_filter": "follower",
+        "fail_message": "your body doesn't move",
+        "success_message": "This place feels different."
+      },
+      { "u_message": { "u_val": "destination_dimension" } }
+    ]
+  }
+]

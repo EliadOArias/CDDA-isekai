@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: None\n"
-"POT-Creation-Date: 2025-11-04 16:39+0800\n"
-"PO-Revision-Date: 2025-11-04 16:41+0800\n"
+"POT-Creation-Date: 2025-11-04 17:10+0800\n"
+"PO-Revision-Date: 2025-11-04 17:12+0800\n"
 "Last-Translator: \n"
 "Language-Team: None\n"
 "Language: zh_CN\n"
@@ -20,5 +20,18 @@ msgstr "异世界"
 
 #. ~ Description of MOD 'Isekai'
 #: .\modinfo.json
-msgid "Blade X Magic! Fantasy isekai! 111"
+msgid "Blade X Magic!"
 msgstr "剑与魔法！"
+
+#. ~ Success message in travel in EoC 'EOC_isekai_travel_test'
+#: .\eoc\test\travel_isekai_test.json
+msgid "This place feels different."
+msgstr "世界变得不同。"
+
+#. ~ Fail message in travel in EoC 'EOC_isekai_travel_test'
+#: .\eoc\test\travel_isekai_test.json
+msgid "your body doesn't move"
+msgstr "你的身体没有任何移动。"
+
+#~ msgid "Blade X Magic! Fantasy isekai! 111"
+#~ msgstr "剑与魔法！"

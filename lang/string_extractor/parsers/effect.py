@@ -114,6 +114,13 @@ def _parse_effect_entry(eff, origin, name):
                        comment=f"String input window's description in {name}")
         write_variable(string_input.get("default_text"), origin,
                        comment=f"String input window's default text in {name}")
+        
+    if "u_travel_to_dimension" in eff or "npc_travel_to_dimension" in eff:
+        write_variable(eff.get("success_message"), origin,
+                       comment=f"Success message in travel in {name}")
+        write_variable(eff.get("fail_message"), origin,
+                       comment=f"Fail message in travel in {name}")
+                       
 
 
 def _parse_effect_nested(eff, origin, name):
