@@ -14,6 +14,16 @@
   },
   {
     "type": "overmap_terrain",
+    "id": [ "isekai_cabin_small_1", "isekai_cabin_small_roof_1" ],
+    "vision_levels": "isolated_building",
+    "travel_cost_type": "structure",
+    "see_cost": "high",
+    "name": "small cabin",
+    "sym": "C",
+    "color": "i_green"
+  },
+  {
+    "type": "overmap_terrain",
     "id": "isekai_trail",
     "looks_like": "road",
     "vision_levels": "large_pavement",

@@ -1,0 +1,21 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "Small Cabin",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "isekai_cabin_small_1_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "isekai_cabin_small_roof_1_north" },
+      { "point": [ -1, -1, 0 ], "locations": [ "land", "isekai_trail" ] },
+      { "point": [ -1, 0, 0 ], "locations": [ "land", "isekai_trail" ] }
+    ],
+    "connections": [
+      { "point": [ -1, -1, 0 ], "terrain": "isekai_trail", "connection": "isekai_trail" },
+      { "point": [ -1, 0, 0 ], "terrain": "isekai_trail", "connection": "isekai_trail" }
+    ],
+    "locations": [ "isekai_field" ],
+    "city_distance": [ 0, -1 ],
+    "city_sizes": [ 0, -1 ],
+    "occurrences": [ 50, 100 ],
+    "flags": [ "CLASSIC", "MAN_MADE", "ISEKAI" ]
+  }
+]

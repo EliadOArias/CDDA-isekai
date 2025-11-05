@@ -1,0 +1,82 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_isekai_wall_wood",
+    "copy-from": "t_abstract_wall_wood",
+    "name": "wooden wall",
+    "looks_like": "t_wood_wall_w",
+    "description": "A finished wall of planks and support beams, capable of supporting an upper level or roof.  The main body of the structure is coated in white limewash.  Highly flammable.",
+    "color": "light_red",
+    "roof": "t_wood_roof",
+    "delete": { "flags": [ "MINEABLE" ] },
+    "bash": {
+      "str_min": 12,
+      "str_max": 150,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_wood_chipped",
+      "items": [
+        { "item": "2x4", "count": [ 0, 3 ] },
+        { "item": "wood_panel", "count": [ 0, 2 ] },
+        { "item": "nail", "charges": [ 1, 5 ] },
+        { "item": "splinter", "count": [ 1, 4 ] }
+      ],
+      "hit_field": [ "fd_dust", 2 ],
+      "destroyed_field": [ "fd_splinters", 1 ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_isekai_rock_wall_with_blank",
+    "copy-from": "t_abstract_wall_stone",
+    "name": "stone wall",
+    "looks_like": "t_wood_wall_w",
+    "description": "A sturdy stone wall clad in protective wooden planking, capable of supporting an upper level or roof.  The main body of the structure is coated in white limewash.",
+    "bash": {
+      "str_min": 80,
+      "str_max": 300,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [
+        { "item": "rock", "count": [ 8, 18 ] },
+        { "item": "2x4", "count": [ 0, 1 ] },
+        { "item": "wood_panel", "count": [ 0, 1 ] },
+        { "item": "splinter", "count": [ 1, 2 ] }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_isekai_timber_frame",
+    "copy-from": "t_abstract_wall_wood",
+    "name": "wooden wall",
+    "looks_like": "t_wall_log",
+    "description": "The framework of a house made up of some roughly hewn wooden beams and pillars.  Highly flammable.",
+    "color": "light_red",
+    "roof": "t_wood_roof",
+    "delete": { "flags": [ "MINEABLE" ] },
+    "bash": {
+      "str_min": 60,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_chipped",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ],
+      "hit_field": [ "fd_dust", 2 ],
+      "destroyed_field": [ "fd_splinters", 1 ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_isekai_shingle_flat_roof",
+    "name": "shingle flat roof",
+    "description": "A flat section of rooftop covered with shingles.",
+    "looks_like": "t_shingle_flat_roof",
+    "symbol": ".",
+    "color": "green",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAMMABLE", "FLAT" ],
+    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+  }
+]

@@ -7,7 +7,7 @@
   {
     "type": "overmap_location",
     "id": "isekai_field",
-    "terrains": [ "isekai_trail" ]
+    "terrains": [ "isekai_field" ]
   },
   {
     "type": "overmap_connection",

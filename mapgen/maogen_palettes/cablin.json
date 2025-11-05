@@ -1,0 +1,20 @@
+[
+  {
+    "type": "palette",
+    "id": "isekai_cabin_palette_common",
+    "terrain": {
+      "|": "t_isekai_wall_wood",
+      "I": "t_isekai_timber_frame",
+      "#": "t_isekai_rock_wall_with_blank",
+      "G": "t_fencegate_c",
+      "R": "t_floor",
+      "q": "t_water_sh",
+      "Q": "t_water_dp",
+      "=": "t_door_c",
+      "-": "t_fence",
+      ".": [ [ "t_region_groundcover", 4 ], "t_region_groundcover_forest" ],
+      "~": [ [ "t_region_groundcover_barren", 3 ], "t_region_groundcover" ]
+    },
+    "furniture": { "a": "f_armchair", "A": "f_bookcase", "C": "f_counter", "R": "f_rack_wood", "S": "f_woodstove" }
+  }
+]
