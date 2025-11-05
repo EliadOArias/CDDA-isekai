@@ -13,7 +13,8 @@
       "=": "t_door_c",
       "-": "t_fence",
       ".": [ [ "t_region_groundcover", 4 ], "t_region_groundcover_forest" ],
-      "~": [ [ "t_region_groundcover_barren", 3 ], "t_region_groundcover" ]
+      "~": [ [ "t_region_groundcover_barren", 3 ], "t_region_groundcover" ],
+      "_": [ [ "t_isekai_dirt", 80 ], [ "t_isekai_groundcover_road", 1 ] ]
     },
     "furniture": { "a": "f_armchair", "A": "f_bookcase", "C": "f_counter", "R": "f_rack_wood", "S": "f_woodstove" }
   }
