@@ -1,0 +1,28 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_isekai_riverbridge_dp",
+    "name": "river bridge",
+    "description": "A floating bridge over flowing water.",
+    "looks_like": "t_riverbridge_dp",
+    "symbol": "8",
+    "color": "brown",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAT" ],
+    "connect_groups": "WATER",
+    "deconstruct": {
+      "ter_set": "t_water_moving_dp",
+      "items": [ { "item": "rope_makeshift_6", "count": [ 3, 4 ] }, { "item": "2x4", "count": 8 } ]
+    },
+    "bash": {
+      "str_min": 8,
+      "str_max": 80,
+      "sound": "smash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_water_moving_dp",
+      "items": [ { "item": "2x4", "count": 2, "prob": 25 }, { "item": "splinter", "count": [ 2, 4 ] } ],
+      "hit_field": [ "fd_dust", 2 ],
+      "destroyed_field": [ "fd_splinters", 1 ]
+    }
+  }
+]

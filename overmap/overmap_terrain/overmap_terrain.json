@@ -31,5 +31,13 @@
     "see_cost": "none",
     "travel_cost_type": "road",
     "flags": [ "LINEAR" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "isekai_bridge_road",
+    "copy-from": "generic_bridge",
+    "travel_cost_type": "road",
+    "name": "bridge (overpass)",
+    "extend": { "flags": [ "RIVER", "REQUIRES_PREDECESSOR" ] }
   }
 ]

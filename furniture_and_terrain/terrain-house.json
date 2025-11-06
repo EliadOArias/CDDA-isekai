@@ -27,6 +27,16 @@
   },
   {
     "type": "terrain",
+    "id": "t_isekai_wall_wood_inner",
+    "copy-from": "t_isekai_wall_wood",
+    "name": "wooden wall",
+    "looks_like": "t_wall_wood",
+    "description": "A finished wall of planks and support beams, capable of supporting an upper level or roof.  Highly flammable.",
+    "color": "light_red",
+    "roof": "t_wood_roof"
+  },
+  {
+    "type": "terrain",
     "id": "t_isekai_rock_wall_with_blank",
     "copy-from": "t_abstract_wall_stone",
     "name": "stone wall",

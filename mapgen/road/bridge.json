@@ -1,0 +1,41 @@
+[
+  {
+    "type": "palette",
+    "id": "isekai_bridge_ground_palette",
+    "terrain": { ".": "t_isekai_riverbridge_dp" }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "isekai_bridge_road" ],
+    "object": {
+      "fallback_predecessor_mapgen": "river_center",
+      "rows": [
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         "
+      ],
+      "palettes": [ "isekai_bridge_ground_palette" ]
+    }
+  }
+]

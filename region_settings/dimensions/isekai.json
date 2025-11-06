@@ -596,5 +596,29 @@
       [ "f_sea_anemone", 1 ],
       [ "f_sea_sponge", 1 ]
     ]
+  },
+  {
+    "type": "region_settings_map_extras",
+    "id": "isekai_default",
+    "extras": [
+      "forest",
+      "forest_thick",
+      "forest_water",
+      "field",
+      "ocean_bed",
+      "ocean_shore",
+      "road",
+      "park",
+      "road_nesw_manhole",
+      "build",
+      "marloss",
+      "subway",
+      "lab_subway",
+      "research_facility_lot",
+      "research_facility_interior",
+      "river",
+      "lake_shore",
+      "agricultural"
+    ]
   }
 ]

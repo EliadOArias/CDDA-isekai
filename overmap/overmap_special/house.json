@@ -37,44 +37,48 @@
     "type": "overmap_special",
     "id": "isekai_village_basic",
     "subtype": "mutable",
-    "check_for_locations_area": [ { "type": [ "isekai_field" ], "from": [ -12, 0, 0 ], "to": [ 12, 20, 0 ] } ],
-    "locations": [ "isekai_field", "open_air" ],
-    "joins": [ "road_to_road", "root_to_road", "road_to_house" ],
+    "check_for_locations_area": [ { "type": [ "isekai_field" ], "from": [ -7, -2, 0 ], "to": [ 7, 12, 0 ] } ],
+    "locations": [ "isekai_field", "isekai_trail", "forest", "open_air" ],
+    "joins": [ "entrance_to_locator", "road_to_road", "air_to_air", "is_house" ],
     "overmaps": {
-      "isekai_trail_ns_root_s": { "overmap": "isekai_trail_ns", "south": "root_to_road", "connections": { "north": { "connection": "isekai_trail" } } },
-      "isekai_trail_ns_root_n": { "overmap": "isekai_trail_ns", "north": "root_to_road" },
-      "isekai_trail_ns_road_n": { "overmap": "isekai_trail_ns", "connections": { "north": { "connection": "isekai_trail" } } },
-      "isekai_trail_ns": { "overmap": "isekai_trail_ns" },
-      "isekai_trail_ew": { "overmap": "isekai_trail_ew" },
-      "isekai_trail_sw": { "overmap": "isekai_trail_sw" },
-      "isekai_trail_nw": { "overmap": "isekai_trail_wn" },
-      "isekai_trail_ne": { "overmap": "isekai_trail_ne" },
-      "isekai_trail_se": { "overmap": "isekai_trail_es" },
-      "isekai_trail_esw": { "overmap": "isekai_trail_esw" },
-      "isekai_trail_nsw": { "overmap": "isekai_trail_nsw" },
-      "isekai_trail_new": { "overmap": "isekai_trail_new" },
-      "isekai_trail_nes": { "overmap": "isekai_trail_nes" },
-      "isekai_trail_nesw": { "overmap": "isekai_trail_nesw" },
-      "isekai_trail_end": { "overmap": "isekai_trail_end_south" },
-      "air_road_n": { "overmap": "special_air", "north": "road_to_road" },
-      "air_road_e": { "overmap": "special_air", "east": "road_to_road" },
-      "air_road_s": { "overmap": "special_air", "south": "road_to_road" },
-      "air_road_w": { "overmap": "special_air", "west": "road_to_road" },
-      "air_road_ns": { "overmap": "special_air", "north": "road_to_road", "south": "road_to_road" },
-      "air_road_ew": { "overmap": "special_air", "east": "road_to_road", "west": "road_to_road" },
-      "air_road_ne": { "overmap": "special_air", "north": "road_to_road", "east": "road_to_road" },
-      "air_road_new": { "overmap": "special_air", "north": "road_to_road", "east": "road_to_road", "west": "road_to_road" },
-      "air_road_end": { "overmap": "special_air", "north": "road_to_road" },
-      "air_house_n": { "overmap": "special_air", "north": "road_to_house" },
-      "air_house_e": { "overmap": "special_air", "east": "road_to_house" },
-      "air_house_s": { "overmap": "special_air", "south": "road_to_house" },
-      "air_house_w": { "overmap": "special_air", "west": "road_to_house" },
-      "air_house_a": { "overmap": "special_air", "above": "road_to_house" },
-      "air_house_b": { "overmap": "special_air", "below": "road_to_house" },
-      "house_1_n": { "overmap": "isekai_house_basic_1_1x1_north" },
-      "house_1_roof_n": { "overmap": "isekai_house_basic_1_1x1_north" }
+      "entrance_s": {
+        "overmap": "isekai_field",
+        "south": "entrance_to_locator",
+        "connections": { "north": { "connection": "isekai_trail" } }
+      },
+      "entrance_n": { "overmap": "isekai_field", "north": "entrance_to_locator" },
+      "air": { "overmap": "special_air" },
+      "air_edge_n": { "overmap": "special_air", "north": { "id": "air_to_air", "type": "mandatory" } },
+      "air_edge_end": {
+        "overmap": "special_air",
+        "north": { "id": "air_to_air", "type": "mandatory" },
+        "east": { "id": "air_to_air", "type": "available" },
+        "south": { "id": "air_to_air", "type": "available" },
+        "west": { "id": "air_to_air", "type": "available" }
+      },
+      "air_edge_e": { "overmap": "special_air", "east": { "id": "air_to_air", "type": "mandatory" } },
+      "air_edge_s": { "overmap": "special_air", "south": { "id": "air_to_air", "type": "mandatory" } },
+      "air_edge_w": { "overmap": "special_air", "west": { "id": "air_to_air", "type": "mandatory" } },
+      "air_edge_ne": {
+        "overmap": "special_air",
+        "north": { "id": "air_to_air", "type": "mandatory" },
+        "east": { "id": "air_to_air", "type": "available" }
+      },
+      "air_edge_nw": {
+        "overmap": "special_air",
+        "north": { "id": "air_to_air", "type": "mandatory" },
+        "west": { "id": "air_to_air", "type": "available" }
+      },
+      "air_edge_new": {
+        "overmap": "special_air",
+        "north": { "id": "air_to_air", "type": "mandatory" },
+        "east": { "id": "air_to_air", "type": "available" },
+        "west": { "id": "air_to_air", "type": "available" }
+      },
+      "house_1_n": { "overmap": "isekai_house_basic_1_1x1_east", "connections": { "north": { "connection": "isekai_trail" } } },
+      "house_1_roof_n": { "overmap": "isekai_house_basic_1_1x1_roof_east" }
     },
-    "root": "isekai_trail_ns_root_s",
+    "root": "entrance_s",
     "city_distance": [ 0, -1 ],
     "city_sizes": [ 0, -1 ],
     "occurrences": [ 10, 50 ],
@@ -82,16 +86,18 @@
     "phases": [
       [
         {
-          "name": "village_entrance",
+          "name": "entrance",
           "chunk": [
-            { "overmap": "isekai_trail_ns_root_n", "pos": [ 0, 0, 0 ] },
-            { "overmap": "isekai_trail_ns", "pos": [ 0, 1, 0 ] },
-            { "overmap": "isekai_trail_ns", "pos": [ 0, 2, 0 ] },
-            { "overmap": "isekai_trail_nesw", "pos": [ 0, 3, 0 ] },
-            { "overmap": "air_road_ew", "pos": [ 0, 3, 10 ] },
-            { "overmap": "isekai_trail_ns", "pos": [ 0, 4, 0 ] },
-            { "overmap": "isekai_trail_ns", "pos": [ 0, 5, 0 ] },
-            { "overmap": "air_road_s", "pos": [ 0, 5, 10 ] }
+            { "overmap": "entrance_n", "pos": [ 0, 0, 0 ] },
+            { "overmap": "air", "pos": [ -1, 0, 10 ] },
+            { "overmap": "air", "pos": [ 0, 0, 10 ] },
+            { "overmap": "air", "pos": [ 1, 0, 10 ] },
+            { "overmap": "air_edge_w", "pos": [ -1, 1, 10 ] },
+            { "overmap": "air", "pos": [ 0, 1, 10 ] },
+            { "overmap": "air_edge_e", "pos": [ 1, 1, 10 ] },
+            { "overmap": "air", "pos": [ -1, 2, 10 ] },
+            { "overmap": "air_edge_s", "pos": [ 0, 2, 10 ] },
+            { "overmap": "air", "pos": [ 1, 2, 10 ] }
           ],
           "max": 1
         }
@@ -99,62 +105,40 @@
       [
         {
           "name": "house_1",
-          "//": "basic house",
           "chunk": [
             { "overmap": "house_1_n", "pos": [ 0, 0, 0 ] },
             { "overmap": "house_1_roof_n", "pos": [ 0, 0, 1 ] },
-            { "overmap": "air_house_b", "pos": [ 0, 0, 10 ] }
+            { "overmap": "air", "pos": [ -1, 0, 10 ] },
+            { "overmap": "air_edge_n", "pos": [ 0, 0, 10 ] },
+            { "overmap": "air", "pos": [ 1, 0, 10 ] },
+            { "overmap": "air_edge_w", "pos": [ -1, 1, 10 ] },
+            { "overmap": "air", "pos": [ 0, 1, 10 ] },
+            { "overmap": "air_edge_e", "pos": [ 1, 1, 10 ] },
+            { "overmap": "air", "pos": [ -1, 2, 10 ] },
+            { "overmap": "air_edge_s", "pos": [ 0, 2, 10 ] },
+            { "overmap": "air", "pos": [ 1, 2, 10 ] }
           ],
-          "weight": 1
-        }
-      ],
-      [
+          "max": { "poisson": 5 }
+        },
         {
-          "name": "road_with_house",
+          "name": "house_1_2",
           "chunk": [
-            { "overmap": "isekai_trail_nes", "pos": [ 0, 0, 0 ] },
-            { "overmap": "air_road_ns", "pos": [ 0, 0, 10 ] },
-            { "overmap": "air_house_a", "pos": [ 1, 0, 9 ] }
+            { "overmap": "house_1_n", "pos": [ 1, 1, 0 ] },
+            { "overmap": "house_1_roof_n", "pos": [ 1, 1, 1 ] },
+            { "overmap": "air", "pos": [ -1, 0, 10 ] },
+            { "overmap": "air_edge_n", "pos": [ 0, 0, 10 ] },
+            { "overmap": "air", "pos": [ 1, 0, 10 ] },
+            { "overmap": "air_edge_w", "pos": [ -1, 1, 10 ] },
+            { "overmap": "air", "pos": [ 0, 1, 10 ] },
+            { "overmap": "air_edge_e", "pos": [ 1, 1, 10 ] },
+            { "overmap": "air", "pos": [ -1, 2, 10 ] },
+            { "overmap": "air_edge_s", "pos": [ 0, 2, 10 ] },
+            { "overmap": "air", "pos": [ 1, 2, 10 ] }
           ],
-          "max": 8
-        },
-        {
-          "name": "road",
-          "chunk": [ { "overmap": "isekai_trail_ns", "pos": [ 0, 0, 0 ] }, { "overmap": "air_road_ns", "pos": [ 0, 0, 10 ] } ],
-          "max": 24
-        },
-        {
-          "name": "road_curve",
-          "chunk": [ { "overmap": "isekai_trail_ne", "pos": [ 0, 0, 0 ] }, { "overmap": "air_road_ne", "pos": [ 0, 0, 10 ] } ],
-          "max": 0
+          "max": { "poisson": 5 }
         }
       ],
-      [
-        {
-          "name": "house_1_s",
-          "//": "basic house",
-          "chunk": [
-            { "overmap": "house_1_n", "pos": [ 0, 0, 0 ] },
-            { "overmap": "house_1_roof_n", "pos": [ 0, 0, 1 ] },
-            { "overmap": "air_house_b", "pos": [ 0, 0, 10 ] }
-          ],
-          "weight": 1
-        }
-      ],
-      [
-        {
-          "name": "road_end",
-          "//": "basic house",
-          "chunk": [ { "overmap": "isekai_trail_end", "pos": [ 0, 0, 0 ] }, { "overmap": "air_road_end", "pos": [ 0, 0, 10 ] } ],
-          "weight": 1
-        },
-        {
-          "name": "road_end",
-          "//": "basic house",
-          "chunk": [ { "overmap": "isekai_trail_ns_road_n", "pos": [ 0, 0, 0 ] }, { "overmap": "air_road_end", "pos": [ 0, 0, 10 ] } ],
-          "weight": 1
-        }
-      ]
+      [ { "name": "air_edge_end", "chunk": [ { "overmap": "air_edge_end", "pos": [ 0, 0, 10 ] } ], "weight": 1000 } ]
     ]
   }
 ]
